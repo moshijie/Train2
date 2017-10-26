@@ -22,6 +22,81 @@
  </ul>
 <script>
     console.log("test");
+    console.log(Number.NEGATIVE_INFINITY);
+    console.log(Number.POSITIVE_INFINITY);
+    console.log(Number.MAX_VALUE +"   "+ Number.MIN_VALUE);
+
+    //isFinite()判断是否超过规定范围（未超过 true,超过false)
+    console.log(isFinite(Number.POSITIVE_INFINITY));
+    console.log(isFinite(5));
+    var b=null;
+    var b1="rer";
+    var b2=43;
+    console.log(typeof(b));
+    console.log(typeof(b1));
+    console.log(typeof(b2));
+    //NaN!=NaN  ,NaN是Number类型
+    console.log(typeof(NaN));
+
+    var c1=0/0;//NaN
+    var c2=12/0;//INFINITY
+    var c3=12/0*0;//NaN
+    console.log(c1+"   "+c2+"  "+c3);
+
+    //isNaN() 判断是否是数值，会尝试隐式转换成数值 不是数值 ，则返回true,反之返回false
+    console.log(isNaN(NaN));
+    console.log(isNaN(1));
+
+    var obj1={
+        a:1,
+        b:2
+    };
+    console.log(isNaN(obj1));
+
+
+    //valueOf()返回自身
+    var array1=[12,3,32];
+//    console.log(array1);
+    console.log(array1.valueOf());
+    console.log(array1.toString());
+
+
+    var obj2={
+        name:"test",
+        age:22
+    }
+    console.log(obj2.valueOf());
+    console.log(obj2.toString());
+
+    var c={
+        i:5,
+        toString:function () {
+            console.log("调用String");
+            return 1;
+        },
+        valueOf:function () {
+            console.log("valueOf");
+            return 5;
+        }
+    }
+    //强制转换为字符串则先调用toString()，其他情况优先调用valueOf()
+    console.log(c);
+    console.log(c.toString());//直接调用toString()
+    console.log(+c);
+    console.log(''+c);//调用valueOf()，再隐式转换为字符串
+    console.log(String(c));
+//    var x=prompt("请输入名字",'默认');//prompt()  弹框
+//    console.log(typeof x);
+
+    //String能转化的类型toString不一定能转化，toString能转化的类型String一定能转化、
+    var num=30;
+    console.log(num.toString(16));//toString能将变量转换为指定的进制；
+
+    var num2=43.5435325;
+    console.log(num2.toFixed(0));
+    console.log(num2.toExponential(5));//以指数计数法将数字转换成字符串
+    console.log(num2.toPrecision(5));//toPrecision() 方法可在对象的值超出指定位数时将其转换为指数计数法。
+    console.log(parseInt(num2,10));//parseInt(num2,10) 也可进行进制转换，把对应的数转换成对应的进制
 </script>
 </body>
 </html>
