@@ -4,22 +4,42 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/index.css">
+    <style>
+        .test{
+            cursor: pointer;
+        }
+        .m-list2{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
- <div>test</div>
- <ul class="m-list">
-     <li>1list</li>
-     <li>2list</li>
-     <li>3list</li>
-     <li>4list</li>
-     <li>5list</li>
- </ul>
- <ul class="m-list2">
-     <li>list2 内容 1</li>
-     <li>list2 内容 2</li>
-     <li>list2 内容 3</li>
-     <li>list2 内容 4</li>
- </ul>
+     <div>test</div>
+     <ul class="m-list">
+         <li>1list</li>
+         <li>2list</li>
+         <li>3list</li>
+         <li>4list</li>
+         <li>5list</li>
+     </ul>
+     <ul class="m-list2">
+         <li>list2 内容 1</li>
+         <li>list2 内容 2</li>
+         <li>list2 内容 3</li>
+         <li>list2 内容 4</li>
+     </ul>
+     <span class="test">teetettetetetetet</span>
+     <p>方式方法付付呃呃鹅鹅鹅</p>
+     <span style="cursor:ne-resize">ne-resize</span><br />
+     <span style="cursor:nw-resize">nw-resize</span><br />
+     <span style="cursor:n-resize">n-resize</span><br />
+     <span style="cursor:se-resize">se-resize</span><br />
+     <span style="cursor:sw-resize">sw-resize</span><br />
+     <span style="cursor:s-resize">s-resize</span><br />
+     <span style="cursor:w-resize">w-resize</span><br />
+     <span style="cursor:text">text</span><br />
+     <span style="cursor:wait">wait</span><br />
+     <span style="cursor:pointer">Pointer</span><br />
 <script>
     console.log("test");
     console.log(Number.NEGATIVE_INFINITY);
@@ -111,12 +131,29 @@
     console.log("test");
 //    fun1();
 
+//    =====================arguments==================================
     //arguments  使用特殊对象 arguments，开发者无需明确指出参数名，就能访问它们。
+    function fn(a,b,c){
+        console.log(a+b-c);
+        console.log(arguments.length);
+        //arguments是存放函数实参的数组,arguments.length表示的是实参长度,即有几个实参
+        console.log(fn.length);
+        //这表示的是函数形参的数组,也就是有几个形参
+    }
+    fn(1,3,4);
+
+    function box() {
+        return arguments[0]+' | '+arguments[1];  //得到每次参数的值
+    }
+    console.log(box(1,2,3,4,5,6));  //传递参数
+    function box1() {
+        return arguments.length;  //得到 6
+    }
+    console.log(box1(1,2,3,4,5,6));
 
 
 
-
-    //================判断语句==================================
+    //=====================================判断语句==================================
     //分为单分支，双分支，多分支
 
     //if else 是多重嵌套，switch是多分支
@@ -188,8 +225,41 @@
             default: console.log(num+"不是我喜欢的");
         }
     }
-    like();
+//    like();
+    function grade() {
+        var num=Math.floor(Number(prompt("请输入1-5数字,评价等级")));
+        switch (num){
+            case 1:console.log(num+"：等级E");break;
+            case 2:console.log(num+"：等级D");break;
+            case 3:console.log(num+"：等级C");break;
+            case 4:console.log(num+"：等级B");break;
+            case 5:console.log(num+"：等级A");break;
+            default: console.log(num+"等级之外");
+        }
+    }
+//    grade();
+    for(var i=0;i<6;i++){
+        console.log("已经取到第"+(i+1)+"个球了")
+    }
 
+    var sum=0,sum1=0,sum2=0;
+    for(var i=0;i<=100;i++){
+        sum=sum+i;
+        if(i%2==0){
+            sum1+=i;
+        }else {
+            sum2+=i;
+        }
+    }
+    console.log("总和:"+sum+"  奇数和:"+sum2+"   偶数和："+sum1);
+
+    var array5=[1,3,2,8,4];
+    console.log(array5.sort().join());
+
+    function argumentTest() {
+        console.log(arguments[1]);
+    }
+    argumentTest(1,2,3);
 </script>
 </body>
 </html>
