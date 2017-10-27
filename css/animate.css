@@ -17,14 +17,9 @@ body{
     font-weight: 600;
     margin: 30px 0 10px 0;
 }
-.block1{
-    position: relative;
-    overflow: hidden;
-}
-.block1 img{
-    display: block;
-    width: 100%;
-}
+
+
+
 .b1-circle{
     position: absolute;
     right: 20px;
@@ -43,11 +38,67 @@ body{
     display: block;
     padding-top: 5px;
 }
-.block2{
-    position: relative;
-}
+
+
 .block2 p{
     margin: 0;
+}
+
+.b2-text{
+    padding: 30px;
+}
+.b2-text p:nth-child(1){
+    font-size: 20px;
+    font-weight: 600;
+}
+.b2-text p:nth-child(2){
+    color: coral;
+    line-height: 30px;
+}
+
+
+
+
+
+/*========================动画====================================*/
+.block1{
+    position: relative;
+    overflow: hidden;
+    height: 245px;
+    transition:height .5s, transform .5s;
+}
+.m-block:hover .block1{
+    height: 145px;
+}
+.block1 img{
+    display: block;
+    width: 100%;
+    transform: scale(1);
+    transition: transform .5s;
+}
+.m-block:hover .block1 img{
+    transform: scale(1.2);
+}
+.block2{
+    position: relative;
+    height: 150px;
+    /*overflow: hidden;*/
+    transition: height .5s, transform .5s;
+}
+.m-block:hover .block2{
+    height: 250px;
+}
+.b2-text p:nth-child(3){
+    color: #666C74;
+    /*line-height: 30px;*/
+    opacity: 0;
+    transform: translateY(45px);
+    transition: opacity .3s, transform .3s;
+    transition-delay: .2s;
+}
+.m-block:hover .b2-text p:nth-child(3){
+    opacity: 1;
+    transform: translateY(0);
 }
 .b2-title{
     position: absolute;
@@ -61,19 +112,4 @@ body{
     margin: 0;
     padding: 0 10px;
     font-size: 12px;
-}
-.b2-text{
-    padding: 30px;
-}
-.b2-text p:nth-child(1){
-    font-size: 20px;
-    font-weight: 600;
-}
-.b2-text p:nth-child(2){
-    color: coral;
-    line-height: 30px;
-}
-.b2-text p:nth-child(3){
-    color: #666C74;
-    /*line-height: 30px;*/
 }

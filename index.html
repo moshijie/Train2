@@ -97,6 +97,20 @@
     console.log(num2.toExponential(5));//以指数计数法将数字转换成字符串
     console.log(num2.toPrecision(5));//toPrecision() 方法可在对象的值超出指定位数时将其转换为指数计数法。
     console.log(parseInt(num2,10));//parseInt(num2,10) 也可进行进制转换，把对应的数转换成对应的进制
+
+    var fun1=function () {
+        console.log("qianmian");
+    }();
+
+    //立即执行函数   实参写在后面
+    (function (a,b) {
+        console.log(a+"  b:"+b);
+    })(1,5);
+    console.log("test");
+//    fun1();
+
+    //arguments  使用特殊对象 arguments，开发者无需明确指出参数名，就能访问它们。
+
 </script>
 </body>
 </html>
