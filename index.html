@@ -88,7 +88,7 @@
 //    var x=prompt("请输入名字",'默认');//prompt()  弹框
 //    console.log(typeof x);
 
-    //String能转化的类型toString不一定能转化，toString能转化的类型String一定能转化、
+    //String能转化的类型toString不一定能转化，toString能转化的类型String一定能转化、(toString不能转化NULL 和undefined)
     var num=30;
     console.log(num.toString(16));//toString能将变量转换为指定的进制；
 
@@ -98,6 +98,8 @@
     console.log(num2.toPrecision(5));//toPrecision() 方法可在对象的值超出指定位数时将其转换为指数计数法。
     console.log(parseInt(num2,10));//parseInt(num2,10) 也可进行进制转换，把对应的数转换成对应的进制
 
+
+    //函数：预定义，可重复执行的代码块
     var fun1=function () {
         console.log("qianmian");
     }();
@@ -110,6 +112,83 @@
 //    fun1();
 
     //arguments  使用特殊对象 arguments，开发者无需明确指出参数名，就能访问它们。
+
+
+
+
+    //================判断语句==================================
+    //分为单分支，双分支，多分支
+
+    //if else 是多重嵌套，switch是多分支
+    if(true){
+
+    }else if(false){
+
+    }else {
+
+    }
+    var i=0;
+    switch (i){
+        case 1:console.log(i);break;
+        case 2:console.log(i);break;
+        default:console.log(i);
+    }
+
+
+//    var a=1;
+//    var a=prompt("请输入0-100的数字");
+//    if(a==100){
+//        console.log("奖励一辆兰博基尼");
+//    }else if(a>=90 &&a<=99){
+//        console.log("奖励一辆法拉利");
+//    }else if(a>=80 &&a<=89){
+//        console.log("奖励一辆宝马");
+//    }else if(a>=70 &&a<=79){
+//        console.log("奖励一辆奥迪");
+//    }else if(a>=60 &&a<=69){
+//        console.log("奖励一辆奥拓");
+//    }else {
+//        console.log("完蛋了");
+//    }
+
+//    var b=prompt("请输入0-100的成绩");
+//    if(b>=85){
+//        console.log("优秀");
+//    }else if(b>=75 &&b<85){
+//        console.log("很好");
+//    }else if(b>=60 &&b<=75){
+//        console.log("良好");
+//    }else {
+//        console.log("不及格");
+//    }
+
+
+
+    function getResult() {
+        var weight=prompt("请输入体重(kg)");
+        var height=prompt("请输入身高(m)");
+        var result=weight/height/height;
+        if(result>=20 && result<=25){
+            console.log(result+"  正常");
+        }else if(result<20){
+            console.log(result+"  偏瘦");
+        }else {
+            console.log(result+"  偏胖");
+        }
+    }
+//    getResult();
+    function like() {
+        var num=parseInt(prompt("请输入你喜欢的1-5数字"));
+        switch (num){
+            case 1:console.log(num+"是我喜欢的数字");break;
+            case 2:console.log(num+"是我喜欢的数字");break;
+            case 3:console.log(num+"是我喜欢的数字");break;
+            case 4:console.log(num+"是我喜欢的数字");break;
+            case 5:console.log(num+"是我喜欢的数字");break;
+            default: console.log(num+"不是我喜欢的");
+        }
+    }
+    like();
 
 </script>
 </body>
