@@ -20,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="263" column="9" lean-forward="true" selection-start-line="263" selection-start-column="9" selection-end-line="263" selection-end-column="9" />
+            <state relative-caret-position="442">
+              <caret line="264" column="22" lean-forward="false" selection-start-line="264" selection-start-column="22" selection-end-line="264" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#span#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -243,7 +243,7 @@
       <workItem from="1508830763214" duration="4338000" />
       <workItem from="1508893714502" duration="17221000" />
       <workItem from="1508979767259" duration="25317000" />
-      <workItem from="1509066061800" duration="20129000" />
+      <workItem from="1509066061800" duration="20169000" />
     </task>
     <task id="LOCAL-00001" summary="添加新的页面">
       <created>1508834629445</created>
@@ -294,11 +294,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509103806628</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加新的内容">
+      <created>1509103866891</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1509103866891</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69545000" />
+    <option name="totallyTimeSpent" value="69585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="149" y="0" width="1381" height="860" extended-state="0" />
@@ -612,8 +619,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="263" column="9" lean-forward="true" selection-start-line="263" selection-start-column="9" selection-end-line="263" selection-end-column="9" />
+        <state relative-caret-position="442">
+          <caret line="264" column="22" lean-forward="false" selection-start-line="264" selection-start-column="22" selection-end-line="264" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#span#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#2;n#body#0;n#html#0;n#!!top" expanded="true" />
